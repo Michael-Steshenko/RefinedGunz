@@ -19,10 +19,6 @@ Refined Gunz is a modified version of Gunz the Duel, a game by MAIET Entertainme
 
 # Usage
 To start up a basic local server and play on that, download binaries from the [Releases](https://github.com/Asunaya/RefinedGunz/releases) page on here, run the server (MatchServer.exe) and then run the client (Gunz.exe). 
-
-## making an 'OWNER' account
-You can create an account in game, to make this user OWNER open the Server folder, and open GunzDB.sq3 with SQLiteStudio, under Tables > Account, choose the data tab, find your account and change UGradeId to 255.
-
 There is no additional configuration required.
 
 To connect to someone else's server instance, change the IP in config.xml to their IP or domain. (Make sure ports are open, etc.)
@@ -32,6 +28,9 @@ Running the client requires DirectX 9 (or Vulkan support, although that is unfin
 Running the server with SQLite (the default) requires no external dependencies or configuration. Running it with MSSQL requires you to compile it with MSSQL support (pass `-DMSSQL=1` to cmake), set up ODBC and a matching MSSQL server instance, and set up database login info in server.ini.
 
 Note that since Refined Gunz is based on Gunz 1.0, MSSQL database files, XMLs, etc. from Gunz 1.5 distributions may not work with it.
+
+## making an 'OWNER' account
+You can create an account in game, to make this user OWNER open the Server folder, and open GunzDB.sq3 with SQLiteStudio, under Tables > Account, choose the data tab, find your account and change UGradeId to 255.
 
 # Building
 Requisites:
